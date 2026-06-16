@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.use(cors({
-    origin: "http://localhost:5173", 
+    origin: ["http://localhost:5173", "https://uas-react-lanjutan-kidscare-2wlz.vercel.app/"],
     credentials: true, // WAJIB ada agar cookie/token terbaca
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"]
