@@ -5,7 +5,7 @@ import Register from "./pages/Register";
 
 // Import Halaman Dashboard - Menggunakan file tunggal yang sudah responsif
 import Dashboard from "./pages/Dashboard";
-import DashboardOrangTua from "./pages/DashboardOrangTua"; 
+import DashboardOrangtua from "./pages/DashboardOrangtua"; 
 import DashboardDokter from "./pages/DashboardDokter";
 
 // Import Komponen Keamanan
@@ -29,7 +29,7 @@ function App() {
       {/* Rute Khusus Orang Tua */}
       <Route path="/dashboard-orang-tua" element={
         <ProtectedRoute requiredRole="orang_tua">
-          <DashboardOrangTua />
+          <DashboardOrangtua />
         </ProtectedRoute>
       } />
 
